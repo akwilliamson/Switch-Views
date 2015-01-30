@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9725DFCA1A7C209400893851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9725DFC91A7C209400893851 /* AppDelegate.swift */; };
-		9725DFCC1A7C209400893851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9725DFCB1A7C209400893851 /* ViewController.swift */; };
 		9725DFCF1A7C209400893851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9725DFCD1A7C209400893851 /* Main.storyboard */; };
 		9725DFD11A7C209400893851 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9725DFD01A7C209400893851 /* Images.xcassets */; };
 		9725DFD41A7C209400893851 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9725DFD21A7C209400893851 /* LaunchScreen.xib */; };
 		9725DFE01A7C209400893851 /* View_SwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9725DFDF1A7C209400893851 /* View_SwitcherTests.swift */; };
+		9725DFEA1A7C21F900893851 /* SwitchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9725DFE91A7C21F900893851 /* SwitchingViewController.swift */; };
+		9725DFEC1A7C22EE00893851 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9725DFEB1A7C22EE00893851 /* BlueViewController.swift */; };
+		9725DFEE1A7C22FB00893851 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9725DFED1A7C22FB00893851 /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		9725DFC41A7C209400893851 /* View Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "View Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9725DFC81A7C209400893851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9725DFC91A7C209400893851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9725DFCB1A7C209400893851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9725DFCE1A7C209400893851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9725DFD01A7C209400893851 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9725DFD31A7C209400893851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9725DFD91A7C209400893851 /* View SwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "View SwitcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9725DFDE1A7C209400893851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9725DFDF1A7C209400893851 /* View_SwitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_SwitcherTests.swift; sourceTree = "<group>"; };
+		9725DFE91A7C21F900893851 /* SwitchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchingViewController.swift; path = ../SwitchingViewController.swift; sourceTree = "<group>"; };
+		9725DFEB1A7C22EE00893851 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		9725DFED1A7C22FB00893851 /* YellowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				9725DFC91A7C209400893851 /* AppDelegate.swift */,
-				9725DFCB1A7C209400893851 /* ViewController.swift */,
+				9725DFE91A7C21F900893851 /* SwitchingViewController.swift */,
 				9725DFCD1A7C209400893851 /* Main.storyboard */,
 				9725DFD01A7C209400893851 /* Images.xcassets */,
 				9725DFD21A7C209400893851 /* LaunchScreen.xib */,
 				9725DFC71A7C209400893851 /* Supporting Files */,
+				9725DFEB1A7C22EE00893851 /* BlueViewController.swift */,
+				9725DFED1A7C22FB00893851 /* YellowViewController.swift */,
 			);
 			path = "View Switcher";
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9725DFCC1A7C209400893851 /* ViewController.swift in Sources */,
+				9725DFEE1A7C22FB00893851 /* YellowViewController.swift in Sources */,
 				9725DFCA1A7C209400893851 /* AppDelegate.swift in Sources */,
+				9725DFEC1A7C22EE00893851 /* BlueViewController.swift in Sources */,
+				9725DFEA1A7C21F900893851 /* SwitchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
